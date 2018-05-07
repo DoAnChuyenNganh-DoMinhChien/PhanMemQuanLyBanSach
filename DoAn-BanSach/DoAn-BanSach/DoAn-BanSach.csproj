@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2ED4887B-C8DD-4362-B79B-756C91667ABC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoAn_BanSach</RootNamespace>
+    <AssemblyName>DoAn-BanSach</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\KhachHangCtr.cs" />
+    <Compile Include="Control\NhanVienCtr.cs" />
+    <Compile Include="Control\NhaXuatBanCtr.cs" />
+    <Compile Include="Control\TacGiaCtr.cs" />
+    <Compile Include="Control\TheLoaiCtr.cs" />
+    <Compile Include="Model\ConnectToSQL.cs" />
+    <Compile Include="Model\KhachHangMod.cs" />
+    <Compile Include="Model\NhanVienMod.cs" />
+    <Compile Include="Model\NhaXuatBanMod.cs" />
+    <Compile Include="Model\TacGiaMod.cs" />
+    <Compile Include="Model\TheLoaiMod.cs" />
+    <Compile Include="Object\KhachHangObj.cs" />
+    <Compile Include="Object\NhanVienObj.cs" />
+    <Compile Include="Object\NhaXuatBanObj.cs" />
+    <Compile Include="Object\TacGiaObj.cs" />
+    <Compile Include="Object\TheLoaiObj.cs" />
+    <Compile Include="View\frmKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmNhaXuatBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\frmNhaXuatBan.Designer.cs">
+      <DependentUpon>frmNhaXuatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTacgia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\frmTacgia.Designer.cs">
+      <DependentUpon>frmTacgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTheloai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\frmTheloai.Designer.cs">
+      <DependentUpon>frmTheloai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTimkiemkhachhang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\frmTimkiemkhachhang.Designer.cs">
+      <DependentUpon>frmTimkiemkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTimkiemnhanvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\frmTimkiemnhanvien.Designer.cs">
+      <DependentUpon>frmTimkiemnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTimkiemNXB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\frmTimkiemNXB.Designer.cs">
+      <DependentUpon>frmTimkiemNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTimkiemtacgia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\frmTimkiemtacgia.Designer.cs">
+      <DependentUpon>frmTimkiemtacgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmTrangChu.Designer.cs">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmNhaXuatBan.resx">
+      <DependentUpon>frmNhaXuatBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTacgia.resx">
+      <DependentUpon>frmTacgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTheloai.resx">
+      <DependentUpon>frmTheloai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTimkiemkhachhang.resx">
+      <DependentUpon>frmTimkiemkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTimkiemnhanvien.resx">
+      <DependentUpon>frmTimkiemnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTimkiemNXB.resx">
+      <DependentUpon>frmTimkiemNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTimkiemtacgia.resx">
+      <DependentUpon>frmTimkiemtacgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTrangChu.resx">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
